@@ -179,6 +179,7 @@
 
 <main class="main">
   <div class="content">
+
     <div class="left-side">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -231,6 +232,8 @@
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
+        <button (click)="getAllUsers()">GET ALL USERS</button>
+
         @for (item of [
           { title: 'Explore the Docs', link: 'https://angular.dev' },
           { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
